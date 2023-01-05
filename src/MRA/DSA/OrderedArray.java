@@ -37,18 +37,8 @@ public class OrderedArray {
         if(isFull()){
             return false;
         }else{
-            int i;
-            for (i = 0; i < length; i++) {
-                if(data[i] > value) {
-                    break;
-                }
-            }
-
-            length++;
-            for(int j = length-1; j > i; j--){
-                data[j] = data[j-1];
-            }
-            data[i] = value;
+            data[length++] = value;
+            insertionSort();
             return true;
         }
     }
@@ -68,6 +58,20 @@ public class OrderedArray {
                 return true;
             }
         }
+    }
+
+    public void insertionSort(){
+        for(int i=length-2; i>=0; i--){
+            if(data[i] > data[i+1]){
+                swap(i, i+1);
+            }
+        }
+    }
+
+    public void swap(int a, int b){
+        int temp = data[a];
+        data[a] = data[b];
+        data[b] = temp;
     }
 
     public void display(){

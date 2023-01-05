@@ -93,6 +93,16 @@ public class UnOrderedArray<T> {
 
     }
 
+    public void insertionSort(){
+        for (int i = 1; i < length; i++) {
+            for (int j = i-1; j >=0 ; j--) {
+                if((Integer)data[j]>(Integer)data[j+1]){
+                    swap(j, j+1);
+                }
+            }
+        }
+    }
+
 
 
 
