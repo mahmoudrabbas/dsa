@@ -29,6 +29,9 @@ public class UnOrderedArray<T> {
         return index;
     }
 
+    public int access(int index){
+        return (Integer) data[index];
+    }
     public boolean insert(T value){
         if(isFull()){
             return false;

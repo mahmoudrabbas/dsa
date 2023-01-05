@@ -1,13 +1,13 @@
 package MRA.DSA;
 
-public class OrderedArray {
-    int size;
-    int [] data;
-    int length;
+public class OrderedArray<T> {
+    private int size;
+    private Object [] data;
+    private int length;
 
     public OrderedArray(int size){
         this.size = size;
-        data = new int[size];
+        data = new Object[size];
         length=0;
     }
 
@@ -16,7 +16,7 @@ public class OrderedArray {
     }
     private boolean isFull(){ return length==size; }
 
-    public int find(int value){
+    public int find(T value){
         int min = 0;
         int max = length-1;
         while (true){
@@ -25,15 +25,18 @@ public class OrderedArray {
                 return mid;
             } else if (min>max) {
                 return -1;
-            } else if (data[mid]>value) {
+            } else if ((Integer)data[mid]>(Integer)value) {
                 max = mid-1;
-            } else if (data[mid]<value) {
+            } else if ((Integer)data[mid]<(Integer) value) {
                 min = mid+1;
             }
         }
     }
+    public Object access(int index){
+        return data[index];
+    }
 
-    public boolean insert(int value){
+    public boolean insert(T value){
         if(isFull()){
             return false;
         }else{
@@ -43,7 +46,7 @@ public class OrderedArray {
         }
     }
 
-    public boolean delete(int value){
+    public boolean delete(T value){
         if(isEmpty()){
             return false;
         }else{
@@ -60,16 +63,16 @@ public class OrderedArray {
         }
     }
 
-    public void insertionSort(){
+    private void insertionSort(){
         for(int i=length-2; i>=0; i--){
-            if(data[i] > data[i+1]){
+            if((Integer)data[i] > (Integer) data[i+1]){
                 swap(i, i+1);
             }
         }
     }
 
-    public void swap(int a, int b){
-        int temp = data[a];
+    private void swap(int a, int b){
+        Object temp = data[a];
         data[a] = data[b];
         data[b] = temp;
     }
