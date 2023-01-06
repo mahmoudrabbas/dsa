@@ -1,20 +1,24 @@
-import MRA.DSA.ArrayStack;
+import MRA.DSA.QueueArray;
+import MRA.DSA.StackArray;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayStack as = new ArrayStack(5);
+        QueueArray q = new QueueArray(5);
+        q.enqueue(5);
+        q.enqueue(6);
+        q.enqueue(7);
+        q.enqueue(8);
+        q.enqueue(9);
+        System.out.println(q.dequeue());
+        q.enqueue(10);
+        q.display();
+        System.out.println(q.dequeue());
+        q.enqueue(11);
+        q.display();
+//        System.out.println(q.dequeue());
+//        System.out.println(q.dequeue());
+//        System.out.println(q.dequeue());
+//        System.out.println(q.dequeue());
 
-        as.display();
-        as.push(5);
-        as.push(6);
-        as.push(7);
-        as.push(8);
-        as.push(9);
-
-        System.out.println(as.peek());
-        System.out.println(as.pop());
-        System.out.println(as.peek());
-
-        as.display();
     }
 }
