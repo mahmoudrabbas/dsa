@@ -123,3 +123,26 @@
         </tr>
     </tbody>
 </table>
+
+<h3>Priority Queue Array ( Ascending ) Class Contains methods Like:<h3>
+<h5>
+<table>
+    <thead>
+        <th>Method</th>
+        <th>Big O</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>enqueue()</td>    
+            <td>O(n)</td>    
+        </tr>
+        <tr>
+            <td>dequeue()</td>    
+            <td>O(1)</td>    
+        </tr>
+        <tr>
+            <td>display()</td>    
+            <td>O(n)</td>    
+        </tr>
+    </tbody>
+</table>

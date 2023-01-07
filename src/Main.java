@@ -1,24 +1,19 @@
+import MRA.DSA.PriorityQueueArray;
 import MRA.DSA.QueueArray;
 import MRA.DSA.StackArray;
 
 public class Main {
     public static void main(String[] args) {
-        QueueArray q = new QueueArray(5);
-        q.enqueue(5);
+        PriorityQueueArray q = new PriorityQueueArray(5);
+        System.out.println(q.isEmpty());
         q.enqueue(6);
-        q.enqueue(7);
-        q.enqueue(8);
         q.enqueue(9);
-        System.out.println(q.dequeue());
-        q.enqueue(10);
-        q.display();
-        System.out.println(q.dequeue());
-        q.enqueue(11);
-        q.display();
-//        System.out.println(q.dequeue());
-//        System.out.println(q.dequeue());
-//        System.out.println(q.dequeue());
-//        System.out.println(q.dequeue());
+        q.enqueue(7);
+        q.enqueue(5);
+        q.enqueue(8);
 
+        System.out.println("Dequeue: "+ q.dequeue());
+
+        q.display();
     }
 }
