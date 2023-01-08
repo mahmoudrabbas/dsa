@@ -1,5 +1,5 @@
 # Data Structures & Algorithms
-<h3>Implementing an ordered array class contains methods Like:<h3>
+<h3> Ordered array class contains methods Like:</h3>
 <h5>
 <table>
     <thead>
@@ -29,8 +29,9 @@
         </tr>
     </tbody>
 </table>
+</h5>
 
-<h3>Un Ordered Array Class Contains methods Like:<h3>
+<h3>Un Ordered Array Class Contains methods Like:</h3>
 <h5>
 <table>
     <thead>
@@ -73,7 +74,7 @@
     </tbody>
 </table>
 
-<h3>Stack Array Class Contains methods Like:<h3>
+<h3>Stack Array Class Contains methods Like:</h3>
 <h5>
 <table>
     <thead>
@@ -101,7 +102,7 @@
 </table>
 
 
-<h3>Queue Array(Circular Queue Array) Class Contains methods Like:<h3>
+<h3>Queue Array(Circular Queue Array) Class Contains methods Like:<h/3>
 <h5>
 <table>
     <thead>
@@ -146,3 +147,40 @@
         </tr>
     </tbody>
 </table>
+
+
+<h3>LinkedList class contains methods Like:</h3>
+<h5>
+<table>
+    <thead>
+        <th>Method</th>
+        <th>Big O</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>insertInBeginning()</td>    
+            <td>O(1)</td>    
+        </tr>
+<tr>
+            <td>insertAfter()</td>    
+            <td>O(n)</td>    
+        </tr>
+        <tr>
+            <td>deleteFromBeginning()</td>    
+            <td>O(1)</td>    
+        </tr>
+        <tr>
+            <td>isFound()</td>    
+            <td>O(n)</td>    
+        </tr>
+        <tr>
+            <td>deleteByValue()</td>    
+            <td>O(n)</td>    
+        </tr>
+        <tr>
+            <td>display()</td>    
+            <td>O(n)</td>    
+        </tr>
+    </tbody>
+</table>
+

@@ -1,19 +1,18 @@
-import MRA.DSA.PriorityQueueArray;
-import MRA.DSA.QueueArray;
-import MRA.DSA.StackArray;
+import MRA.DSA.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        PriorityQueueArray q = new PriorityQueueArray(5);
-        System.out.println(q.isEmpty());
-        q.enqueue(6);
-        q.enqueue(9);
-        q.enqueue(7);
-        q.enqueue(5);
-        q.enqueue(8);
+        LinkedList ls = new LinkedList();
+        ls.insertInBeginning(5);
+        ls.insertInBeginning(6);
+        ls.insertInBeginning(7);
+        ls.insertInBeginning(8);
+        ls.display();
 
-        System.out.println("Dequeue: "+ q.dequeue());
 
-        q.display();
+        ls.insertAfter(5, 9);
+        ls.display();
+
+
     }
 }
