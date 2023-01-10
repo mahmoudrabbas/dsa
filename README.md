@@ -184,3 +184,64 @@
     </tbody>
 </table>
 
+
+<h3>Doubly LinkedList class contains methods Like:</h3>
+<h5>
+<table>
+    <thead>
+        <th>Method</th>
+        <th>Big O</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>insertFirst()</td>    
+            <td>O(1)</td>    
+        </tr>
+<tr>
+            <td>insertLast()</td>    
+            <td>O(n)</td>    
+        </tr>
+        <tr>
+            <td>deleteFirst()</td>    
+            <td>O(1)</td>    
+        </tr>
+        <tr>
+            <td>deleteLast()</td>    
+            <td>O(1)</td>    
+        </tr>
+        <tr>
+            <td>isFound()</td>    
+            <td>O(n)</td>    
+        </tr>
+        <tr>
+            <td>insertAfter()</td>    
+            <td>O(n)</td>    
+        </tr>
+        <tr>
+            <td>push()</td>    
+            <td>O(1)</td>    
+        </tr>
+        <tr>
+            <td>pop()</td>    
+            <td>O(1)</td>    
+        </tr>
+        <tr>
+            <td>enqueue()</td>    
+            <td>O(1)</td>    
+        </tr>
+        <tr>
+            <td>dequeue()</td>    
+            <td>O(1)</td>    
+        </tr>
+        <tr>
+            <td>displayFromFirst()</td>    
+            <td>O(n)</td>    
+        </tr>
+       <tr>
+            <td>displayFromLast()</td>    
+            <td>O(n)</td>    
+        </tr>
+    </tbody>
+</table>
+
+
