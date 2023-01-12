@@ -60,6 +60,14 @@
             <td>O(n)</td>    
         </tr>
         <tr>
+            <td>mergeSort()</td>    
+            <td>O(n log n)</td>    
+        </tr>
+        <tr>
+            <td>quickSort()</td>    
+            <td>O(n<sup>2</sup>)</td>    
+        </tr>
+        <tr>
             <td>selectionSort()</td>    
             <td>O(n<sup>2</sup>)</td>    
         </tr>
