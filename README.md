@@ -253,3 +253,34 @@
 </table>
 
 
+<h3>Binary Tree class contains methods Like:</h3>
+<h5>
+<table>
+    <thead>
+        <th>Method</th>
+        <th>Big O</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>insert()</td>    
+            <td>O(log n)</td>    
+        </tr>
+        <tr>
+            <td>search()</td>    
+            <td>O(log n)</td>    
+        </tr>
+        <tr>
+            <td>inOrder()</td>    
+            <td>O(n)</td>    
+        </tr>
+        <tr>
+            <td>preOrder()</td>    
+            <td>O(n)</td>    
+        </tr>
+        <tr>
+            <td>postOrder()</td>    
+            <td>O(n)</td>    
+        </tr>
+    </tbody>
+</table>
+

@@ -1,21 +1,29 @@
-import MRA.DSA.UnOrderedArray;
+import MRA.DSA.BinaryTree;
+
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        UnOrderedArray ua = new UnOrderedArray(5);
-        ua.insert(8);
-        ua.insert(4);
-        ua.insert(5);
-        ua.insert(9);
-        ua.insert(1);
+        System.out.println("In The Name Of Allah");
+        BinaryTree t1 = new BinaryTree();
 
-        ua.display();
-//        ua.mergeSort();
-        ua.quickSort();
-        ua.display();
+
+        t1.insert(5);
+        t1.insert(7);
+        t1.insert(8);
+        t1.insert(4);
+        t1.insert(6);
+
+        System.out.print("InOrder Traversing   => ");
+        t1.inOrder();
+        System.out.print("\nPreOrder Traversing  => ");
+        t1.preOrder();
+        System.out.print("\nPostOrder Traversing => ");
+        t1.postOrder();
+
 
 
     }
 
-
 }
+
