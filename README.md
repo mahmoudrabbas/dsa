@@ -266,6 +266,10 @@
             <td>O(log n)</td>    
         </tr>
         <tr>
+            <td>delete()</td>    
+            <td>O(log n)</td>    
+        </tr>
+        <tr>
             <td>search()</td>    
             <td>O(log n)</td>    
         </tr>
