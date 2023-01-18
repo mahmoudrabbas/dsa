@@ -288,3 +288,46 @@
     </tbody>
 </table>
 
+
+<h3>Graph Representation</h3>
+<h5>
+<table>
+    <thead>
+        <th>Representation Type</th>
+        <th>Space</th>
+        <th>Adding Edge</th>
+        <th>Checking is A adjacent to B</th>
+        <th>Iterate the adjacent vertices to V</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Adjacency Matrix</td>    
+            <td><center>V<sup>2</sup></center></td> 
+            <td><center>O(1)</center></td>
+            <td><center>O(1)</center></td>
+            <td><center>O(V)</center></td>
+        </tr>
+        <tr>
+            <td>Adjacency List</td>    
+            <td><center>E + V</center></td> 
+            <td><center>O(1)</center></td>
+            <td><center>O(degree(V))</center></td>
+            <td><center>O(degree(V))</center></td>
+        </tr>
+        <tr>
+            <td>Adjacency Set</td>    
+            <td><center>E + V</center></td> 
+            <td><center>O(log V)</center></td>
+            <td><center>O(log V)</center></td>
+            <td><center>O( log(v+degree(V)) )</center></td>
+        </tr>
+        <tr>
+            <td>List of Edges</td>    
+            <td><center>E</center></td> 
+            <td><center>O(1)</center></td>
+            <td><center>O(E)</center></td>
+            <td><center>O(E)</center></td>
+        </tr>
+    </tbody>
+</table>
+

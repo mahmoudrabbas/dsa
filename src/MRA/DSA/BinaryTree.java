@@ -198,29 +198,32 @@ public class BinaryTree {
             root= newNode;
             return true;
         }else{
-            TNode current = root;
-            TNode parent;
+            if(search(value)){
+                return false;
+            }else{
+                TNode current = root;
+                TNode parent;
 
-            while (true){
-                parent = current;
-                if(current.item > value){
-                    current = current.left;
-                    if(current==null){
-                        parent.left = newNode;
-                        return true;
-                    }
-                } else if(current.item < value){
-                    current = current.right;
-                    if(current == null){
-                        parent.right = newNode;
-                        return true;
+                while (true){
+                    parent = current;
+                    if(current.item > value){
+                        current = current.left;
+                        if(current==null){
+                            parent.left = newNode;
+                            return true;
+                        }
+                    } else if(current.item < value){
+                        current = current.right;
+                        if(current == null){
+                            parent.right = newNode;
+                            return true;
+                        }
                     }
                 }
             }
         }
     }
 }
-
 
 class TNode {
     int item;

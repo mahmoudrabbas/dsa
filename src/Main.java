@@ -1,25 +1,22 @@
-import MRA.DSA.BinaryTree;
+import MRA.DSA.Graph;
 
-import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("In The Name Of Allah");
-        BinaryTree bt = new BinaryTree();
 
+        Graph graph = new Graph(5);
 
-        bt.insert(50);
-        bt.insert(25);
-        bt.insert(35);
-        bt.insert(40);
-        bt.insert(30);
-        bt.insert(15);
-        bt.insert(20);
-        bt.insert(5);
+        graph.addToEdgeList(0,1);
+        graph.addToEdgeList(0,2);
+        graph.addToEdgeList(0,3);
+        graph.addToEdgeList(1,2);
+        graph.addToEdgeList(1,3);
+        graph.addToEdgeList(3,4);
 
-        bt.inOrder();
-        bt.delete(25);
-        bt.inOrder();
+        graph.displayEdges();
+        System.out.println(graph.checkAdjacencyInEdgeList(4,1));
+        graph.iterateOfVInEdgeList(1);
+
 
     }
 
