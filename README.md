@@ -302,31 +302,31 @@
     <tbody>
         <tr>
             <td>Adjacency Matrix</td>    
-            <td><center>V<sup>2</sup></center></td> 
-            <td><center>O(1)</center></td>
-            <td><center>O(1)</center></td>
-            <td><center>O(V)</center></td>
+            <td>V<sup>2</sup></td> 
+            <td>O(1)</td>
+            <td>O(1)</td>
+            <td>O(V)</td>
         </tr>
         <tr>
             <td>Adjacency List</td>    
-            <td><center>E + V</center></td> 
-            <td><center>O(1)</center></td>
-            <td><center>O(degree(V))</center></td>
-            <td><center>O(degree(V))</center></td>
+            <td>E + V</td> 
+            <td>O(1)</td>
+            <td>O(degree(V))</td>
+            <td>O(degree(V))</td>
         </tr>
         <tr>
             <td>Adjacency Set</td>    
-            <td><center>E + V</center></td> 
-            <td><center>O(log V)</center></td>
-            <td><center>O(log V)</center></td>
-            <td><center>O( log(v+degree(V)) )</center></td>
+            <td>E + V</td> 
+            <td>O(log V)</td>
+            <td>O(log V)</td>
+            <td>O(log(v+degree(V)))</td>
         </tr>
         <tr>
             <td>List of Edges</td>    
-            <td><center>E</center></td> 
-            <td><center>O(1)</center></td>
-            <td><center>O(E)</center></td>
-            <td><center>O(E)</center></td>
+            <td style="color:red">E</td> 
+            <td>O(1)</td>
+            <td>O(E)</td>
+            <td>O(E)</td>
         </tr>
     </tbody>
 </table>
