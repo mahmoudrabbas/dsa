@@ -1,6 +1,8 @@
 package MRA.DSA;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Graph {
     int vertices;
@@ -8,6 +10,7 @@ public class Graph {
     ArrayList<Integer> [] adjacencyList;
     HashSet<Integer> [] adjacencySet;
     ArrayList<Edge> edgeList;
+    Boolean [] marked;
 
 
     public Graph(int vertices){
@@ -16,6 +19,7 @@ public class Graph {
         adjacencyList = new ArrayList[vertices];
         adjacencySet = new HashSet[vertices];
         edgeList = new ArrayList<>();
+        marked = new Boolean[vertices];
 
 
         for (int i = 0; i < vertices; i++) {
@@ -27,6 +31,40 @@ public class Graph {
         for (int i = 0; i < vertices; i++) {
             adjacencyList[i] = new ArrayList<>();
             adjacencySet[i] = new HashSet<>();
+        }
+
+        for (int i = 0; i < vertices; i++) {
+            marked[i] = false;
+        }
+
+    }
+
+    // DFS
+    public void dfs(int v){
+        marked[v] = true;
+        System.out.print(v+" ");
+        for (int node: adjacencyList[v]) {
+            if(!marked[node]){
+                dfs(node);
+            }
+        }
+    }
+
+    // BFS
+    public void bfs(int v){
+        Queue<Integer> q = new LinkedList<>();
+        q.add(v);
+        marked[v] = true;
+
+        while (!q.isEmpty()){
+            int node = q.poll();
+            System.out.print( node +" ");
+            for (int x : adjacencyList[node]) {
+                if(!marked[x]){
+                    q.add(x);
+                    marked[x] = true;
+                }
+            }
         }
 
     }

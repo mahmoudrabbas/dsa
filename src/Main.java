@@ -1,24 +1,18 @@
 import MRA.DSA.Graph;
 
-
 public class Main {
     public static void main(String[] args) {
+        Graph g = new Graph(9);
+        g.addToAdjacencyList(0,1);
+        g.addToAdjacencyList(0,2);
+        g.addToAdjacencyList(0,3);
+        g.addToAdjacencyList(0,4);
+        g.addToAdjacencyList(1,5);
+        g.addToAdjacencyList(5,6);
+        g.addToAdjacencyList(3,7);
+        g.addToAdjacencyList(7,8);
 
-        Graph graph = new Graph(5);
-
-        graph.addToEdgeList(0,1);
-        graph.addToEdgeList(0,2);
-        graph.addToEdgeList(0,3);
-        graph.addToEdgeList(1,2);
-        graph.addToEdgeList(1,3);
-        graph.addToEdgeList(3,4);
-
-        graph.displayEdges();
-        System.out.println(graph.checkAdjacencyInEdgeList(4,1));
-        graph.iterateOfVInEdgeList(1);
-
-
+        g.bfs(0);
     }
-
 }
 
