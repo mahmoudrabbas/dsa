@@ -1,18 +1,26 @@
-import MRA.DSA.Graph;
+import MRA.DSA.BinaryTree;
+import MRA.DSA.HashTable;
 
 public class Main {
     public static void main(String[] args) {
-        Graph g = new Graph(9);
-        g.addToAdjacencyList(0,1);
-        g.addToAdjacencyList(0,2);
-        g.addToAdjacencyList(0,3);
-        g.addToAdjacencyList(0,4);
-        g.addToAdjacencyList(1,5);
-        g.addToAdjacencyList(5,6);
-        g.addToAdjacencyList(3,7);
-        g.addToAdjacencyList(7,8);
+        HashTable<String> ht = new HashTable<String>(3);
+        ht.put(10,"Mahmoud");
+        ht.put(5,"Hend");
+        ht.put(8,"Abeer");
+        ht.put(6,"ali");
+        System.out.println(ht.get(8));
+        System.out.println(ht.get(8));
+        System.out.println(ht.get(5));
+        System.out.println(ht.get(7));
+        System.out.println(ht.search(6));
+        System.out.println(ht.remove(6));
+        System.out.println(ht.search(6));
 
-        g.bfs(0);
+        System.out.println(ht.search(8));
+        System.out.println(ht.remove(8));
+        System.out.println(ht.search(8));
     }
 }
+
+
 

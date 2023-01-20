@@ -1,5 +1,6 @@
 package MRA.DSA;
-
+import java.util.LinkedList;
+import java.util.Queue;
 public class BinaryTree {
     TNode root;
 
@@ -32,6 +33,25 @@ public class BinaryTree {
         return true;
 
 
+    }
+
+    public void bfs(){
+        if(root == null) return;
+        Queue<TNode> q = new LinkedList<TNode>();
+        q.offer(root);
+        TNode current;
+
+        while (!q.isEmpty()){
+            current = q.poll();
+            System.out.print(current.item+" ");
+            if(current.left != null){
+                q.offer(current.left);
+            }
+            if(current.right != null){
+                q.offer(current.right);
+            }
+        }
+        System.out.println();
     }
 
     public void inOrder(){
