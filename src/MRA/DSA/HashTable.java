@@ -18,13 +18,17 @@ public class HashTable<T> {
         return key%size;
     }
 
-    //o(1)
-    public void put(int key, T value){
+    //o(n)
+    public boolean put(int key, T value){
+        if(search(key)){
+            return false;
+        }
         int index = getIndex(key);
         Entry head = hashArray[index];
         Entry newEntry = new Entry<T>(key, value);
         newEntry.next = head.next;
         head.next = newEntry;
+        return true;
     }
 
     public T get(int key){
