@@ -1,21 +1,17 @@
-import MRA.DSA.DirectedGraph;
+import MRA.DSA.Sorting;
 
 public class Main {
     public static void main(String[] args) {
-        DirectedGraph graph = new DirectedGraph(5);
+        int [] arr = {5,9,2,7,4,3,6,8};
 
+        Sorting sorting = new Sorting();
 
-        graph.entryEdgeToList(0,2,6);
-        graph.entryEdgeToList(2,1,7);
-        graph.entryEdgeToList(1,3,4);
-        graph.entryEdgeToList(2,4,2);
-        graph.entryEdgeToList(4,3,3);
-        graph.entryEdgeToList(3,0,5);
+        sorting.quickSort(arr);
 
-        graph.adjListRepresent();
-
-        graph.adjListDelEdge(2,4);
-        graph.adjListRepresent();
+        for (int a: arr) {
+            System.out.print(a+" ");
+        }
+        System.out.println();
 
     }
 }
