@@ -109,6 +109,40 @@ public class Sorting {
     }
 
 
+
+    private void heapify(int arr[], int n, int index){
+        int parent = index;
+        int left = 2*index+1;
+        int right = 2*index+2;
+
+        if(left < n && arr[left] > arr[parent]){
+            parent = left;
+        }
+
+        if(right<n && arr[right] > arr[parent]){
+            parent = right;
+        }
+
+        if(parent!=index){
+            swap(arr, parent, index);
+            heapify(arr, n, parent);
+        }
+    }
+
+    public void heapSort(int arr[]){
+        int n = arr.length;
+
+        for (int i = n/2-1; i >=0 ; i--) {
+            heapify(arr, n, i);
+        }
+
+        for (int i = n-1; i >=0 ; i--) {
+            swap(arr, 0, i);
+            heapify(arr, i, 0);
+        }
+    }
+
+
     public void swap(int [] arr, int a, int b){
         int temp = arr[a];
         arr[a] = arr[b];
