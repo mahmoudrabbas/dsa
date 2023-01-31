@@ -83,15 +83,3 @@ public class LRU_Cache {
 }
 
 
-class CacheNode{
-    int key;
-    int val;
-    CacheNode prev;
-    CacheNode next;
-
-    public CacheNode(){}
-    public CacheNode(int key, int value){
-        this.key = key;
-        this.val = value;
-    }
-}
